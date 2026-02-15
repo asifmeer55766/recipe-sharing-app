@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#root {
+  max-width: 1280px;
+}
+body {
+  background-color: black;
+  color: rgb(236, 236, 236);
+}

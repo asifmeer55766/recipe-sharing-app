@@ -1,0 +1,108 @@
+.search-filter-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+
+  width: 100%;
+  .btn {
+    font-size: 1.9rem;
+    background-color: rgb(48, 48, 48);
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(42, 42, 42);
+    }
+  }
+  .filter-btn {
+    position: relative;
+    .inner-filter-list {
+      background-color: rgb(42, 42, 42);
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      border-radius: 12px;
+      width: 150px;
+      z-index: 999;
+      ul {
+        padding: 5px;
+        li {
+          list-style-type: none;
+          border-radius: 10px;
+          &:hover {
+            background-color: rgb(48, 48, 48);
+          }
+          a {
+            text-decoration: none;
+            font-size: 0.9rem;
+            color: white;
+            text-transform: capitalize;
+            padding: 14px 28px;
+          }
+        }
+      }
+    }
+  }
+  .search-btn {
+    .search-filed {
+      position: absolute;
+      top: 10%;
+      right: 0%;
+      left: 0%;
+      z-index: 999;
+
+      input {
+        display: block;
+        margin: 0px auto;
+        padding: 16px;
+        border-radius: 25px;
+        border: none;
+        width: 98%;
+        font-size: 1.07rem;
+        background-color: rgb(42, 42, 42);
+        color: white;
+        border: 1px solid rgb(72, 72, 72);
+        &:focus {
+          outline: none;
+          background-color: rgb(48, 48, 48);
+        }
+      }
+    }
+  }
+  .nav-links {
+    background-color: rgb(48, 48, 48);
+    padding: 0px;
+    width: 50%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      padding: 12px;
+      &:hover {
+        background-color: rgb(42, 42, 42);
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .search-filter-btn {
+    .nav-links {
+      background: transparent;
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
