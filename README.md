@@ -1,16 +1,139 @@
-# React + Vite
+# Recipe Sharing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Recipe Sharing Application** built with **React** that allows users to explore recipes, search smoothly, and view detailed cooking information. The app uses **Context API** for global state management and follows clean architecture principles.
+![alt text](image.png)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Browse a list of delicious recipes
+- Smooth debounced search functionality
+- Fast and responsive UI
+- Data fetched from a public Recipe API
+- Global state management using Context API
+- Clean component-based architecture
+- Modern UI with dark theme styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**
+- **React Router**
+- **Context API**
+- **SCSS**
+- **JavaScript (ES6+)**
+- **Fetch API**
+
+---
+
+## Project Structure
+
+```text
+src/
+│── context/
+│   └── Context.js
+│
+│── pages/
+│   ├── Home/
+│   ├── About/
+│   └── RecipeDetails/
+│
+│── components/
+│   ├── Loading/
+│   └── Navbar/
+│
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/asifmeer55766/recipe-app.git
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the app
+
+```bash
+npm run dev
+```
+
+The app will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Search Functionality
+
+- Search is **debounced** to improve performance
+- Filters recipes based on name
+- Clearing the search input restores all recipes
+
+---
+
+## State Management
+
+- Context API is used to:
+  - Fetch recipe data
+  - Store global state
+  - Handle loading state
+  - Manage search logic
+
+---
+
+## API Used
+
+- Public Recipe API
+
+  ```
+  https://dummyjson.com/recipes
+  ```
+
+---
+
+## Styling
+
+- SCSS is used for styling
+- Green and orange accent colors for headings and highlights
+
+## Future Improvements
+
+- Favorites feature
+- User authentication
+- Advanced filters (difficulty, cuisine)
+- Lazy loading for pages
+- Server-side search
+
+---
+
+## Contributing
+
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
+
+---
+
+## License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## Author
+
+Built with ❤️ by **Asif Hussain**
